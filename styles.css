@@ -1,10 +1,11 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
-	display: flex;
-	/* flex-direction: row; */
-	justify-content: space-evenly;
-	list-style-type: none;
+	display: flex;   /* to display the items in row format */
+	justify-content: space-evenly; /* to space them equally */
+	list-style: none; /* remove default bullets before items */
+	padding: 0px; 
+	margin: 0px;
 
 }
 
@@ -14,22 +15,32 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+
 
 }
 
 #flex-section2 li {
+	/* list-style: none; */
+	flex: 1; /* to make sure each element takes equal space */
 
 }
 
 #flex-section2 .item1 {
+	order: 1; /* to display this as first column */
 
 }
 
 #flex-section2 .item2 {
+	order: 3; /* to display this as third column */
 
 }
 
 #flex-section2 .item3 {
+	order: 2; /* to display this as second column */
 
 }
 
@@ -39,6 +50,11 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	justify-content: center;
+	align-items: center;
 
 }
 
