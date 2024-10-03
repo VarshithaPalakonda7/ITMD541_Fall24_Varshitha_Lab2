@@ -1,7 +1,7 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
-	display: flex;   /* to display the items in row format */
+	display: flex;   /* to display in flexbox layout */
 	justify-content: space-evenly; /* to space them equally */
 	list-style: none; /* remove default bullets before items */
 	padding: 0px; 
@@ -15,16 +15,15 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-	display: flex;
+	display: flex; /* to display in flexbox layout */
 	padding: 0px;
 	margin: 0px;
-	list-style: none;
+	list-style: none; /* remove default bullets before items */
 
 
 }
 
 #flex-section2 li {
-	/* list-style: none; */
 	flex: 1; /* to make sure each element takes equal space */
 
 }
@@ -50,18 +49,18 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-	display: flex;
+	display: flex; /* to display in flexbox layout */
 	padding: 0px;
 	margin: 0px;
-	justify-content: center;
-	align-items: center;
+	justify-content: center; /* center flex items horizontally within the container */
+	align-items: center; /* to align the items vertically to center */
 
 }
 
 #flex-section3 .tags ul {
-	list-style: none;
+	list-style: none; /* remove default bullets before items */
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap; /* to wrap items into multiple lines if they don't fit in single line */
 	padding: 0px;
 	margin: 0px;
 
@@ -73,10 +72,10 @@
 /* Grid Part 1 */
 
 #grid-section1 .grid {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	display: grid; /* to display the items in gridlayout */
+	grid-template-columns: repeat(4, 1fr); /* create 4 equal-width columns with 1fr */
 	gap: 20px;
-	grid-auto-rows: 100px;
+	grid-auto-rows: 100px; /* rows of 100px tall */
 
 }
 
@@ -87,17 +86,16 @@
 
 #grid-section2 .gridboxblue {
 	display: grid;
-	grid-row: 1/ span 3;
-	grid-column: 2/span 3;
-	order: 2;
+	grid-row: 1/ span 3; /* span all 3 rows */
+	grid-column: 2/span 2; /* Span across columns 2 and 3 */
+	z-index: 1; /*bring blue box on top red box */
 
 }
 
 #grid-section2 .gridboxred {
 	display: grid;
-	grid-row: 2;
-	grid-column: 1/ span 2;
-	order: 1;
+	grid-row: 2; /* place red box in the second row */
+	grid-column: 1/ span 2; /* span across first two columns */
 
 }
 
@@ -107,31 +105,35 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
+	display: grid; /* to display the items in gridlayout */
+	grid-template-columns: 2fr 1fr; /* divide the columns in 2:1 ratio */
 	grid-template-rows: 100px 300px 100px;
 	gap: 10px;
 
 }
 
 #grid-section3 .box1 {
-	grid-column: 1/span 2;
-	order: 1;
+	grid-column: 1/span 2; /* to span the box1 across both columns */
+	grid-row: 1; /* to display this in the first row */
 
 }
 
 #grid-section3 .box2 {
-	order: 3;
+	/* to display this in the second column and row */
+	grid-column: 2;
+	grid-row: 2;
 
 }
 
 #grid-section3 .box3 {
-	order: 2;
+	/* to display this in the first column and second row */
+	grid-column: 1;
+	grid-row: 2;
 }
 
 #grid-section3 .box4 {
-	order: 4;
-	grid-column: 1/span 2;
+	grid-column: 1/span 2; /* to span the box4 across both columns */
+	grid-row: 3; /* to display this in the third row */
 
 }
 
